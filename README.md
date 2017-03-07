@@ -2,7 +2,7 @@
 
 ## Introdução
 
-O projeto troco foi implementado em **php**, **node/javascript** ou **ruby**.
+O projeto troco foi implementado em **php**, **node/javascript** e **ruby**.
 
 ## Testes de demonstração
 
@@ -10,7 +10,7 @@ O projeto troco foi implementado em **php**, **node/javascript** ou **ruby**.
 ### PHP
 
 
-####  resposta exemplos de testes:
+####  resposta exemplos de testes PHP:
 
 <p align="center">
   <img src="/resultados/php/1.png" />
@@ -22,27 +22,14 @@ O projeto troco foi implementado em **php**, **node/javascript** ou **ruby**.
 
 ### Node
 
-#### Exemplo de resposta esperada ao executar console.js:
+#### resposta exemplos de testes Node :
 
-    $ node node/console.js 112.1
-    { '1': 0,
-      '2': 1,
-      '5': 0,
-      '10': 1,
-      '20': 0,
-      '50': 0,
-      '100': 1,
-      '0.5': 0,
-      '0.25': 0,
-      '0.1': 1,
-      '0.01': 0 }
+
+    
 
 ### Ruby
 
 
-#### Exemplo de resposta esperada ao executar console.rb:
+#### resposta exemplos de testes Ruby:
 
-    $ ruby ruby/console.rb 112.1
-    {:"100"=>1, :"50"=>0, :"20"=>0, :"10"=>1, :"5"=>0, :"2"=>1, :"1"=>0, :"0.5"=>0, :"0.25"=>0, :"0.1"=>1, :"0.01"=>0}
-
-
+   

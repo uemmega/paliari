@@ -9,13 +9,14 @@ require_once 'Troco.php';
 $reais = $argv[1] ?: 0;
 //$arrayNotas = $argv[2] ?: null;
 
-$arrayNotas = [
+$arrayNotas=null;
+/*$arrayNotas = [
 		'100' => 0,
 		'0.5' => 0,
 		'0.25' => 0,
 		'0.1' => 0,
 		'0.01' => 0,
-];
+];*/
 
 $troco = new Troco();
 
