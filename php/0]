@@ -1,0 +1,14 @@
+
+Warning: Invalid argument supplied for foreach() in G:\GitHub\paliari\php\Troco.php on line 63
+Array
+(
+    [0] => 112
+    [1] => 0.22000
+)
+Erro :Exception: Não foi possível gerar número de cédulas, sobrou 112 de cédula e 0.22000 de centavos in G:\GitHub\paliari\php\Troco.php:115
+Stack trace:
+#0 G:\GitHub\paliari\php\Troco.php(38): Troco->calcularQtdeNotas('112.22', '[100=,')
+#1 G:\GitHub\paliari\php\console.php(14): Troco->getQtdeNotas('112.22', '[100=,')
+#2 {main}Array
+(
+)

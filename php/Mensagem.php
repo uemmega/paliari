@@ -12,8 +12,7 @@ class Mensagem{
 	 const ERRO_NAO_GEROU_CEDULAS="Não foi possível gerar número de cédulas, sobrou ".Mensagem::SEP."0 de cédula e ".Mensagem::SEP."1 de centavos";
 	 
 	 
-	 public static function geraMensagem($mensagem, $array){	 	
-	 	print_r($array); 
+	 public static function geraMensagem($mensagem, $array){	 	 
 	 	$str=$mensagem;
 	 	$i=0;
 	 	foreach ($array as $attr){

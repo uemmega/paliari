@@ -38,12 +38,24 @@ class Troco
     	return $this->calcularQtdeNotas($reais, $arrayComNotas);
     }
     
-    private function isCedula($valor){
+    /**
+     * Verifica se é uma cédula através do seu valor
+     * 
+     * @param $valor o valor a ser verificado
+     * @return true se é uma cédula ou false se é centavos
+     */
+    public function isCedula($valor){
     	return intval($valor)>0;
     }
     
-    private function sortArrayNotas($arrayComNotas){
-    	
+    /**
+     * Função ordena o array de notas, é necessário porque a função que calcular a quantidade de notas
+     * baseia-se na ordem das notas dipostas no array de notas.
+     * 
+     * @param $arrayComNotas array de notas
+     * @return o array com os valores das notas ordenado
+     */
+    private function sortArrayNotas($arrayComNotas){   	
     	/*if($arrayComNotas==null)
     		return null; */   	
     	$array=array();
@@ -58,14 +70,12 @@ class Troco
     /**
      * Calcula o número de notas em relação ao valor das notas no array de notas.
      * 
-     * @param
-     * @param
-     * @return
+     * @param $valor o valor a ser verificado as notas disponíveis para ele.
+     * @param $arrayComNotas o array com as notas e valores default 0 para quantidade de notas
+     * @return o array de notas com o número de notas calculados em relação ao $valor
      */
     private function calcularQtdeNotas($valor, &$arrayComNotas=null)
     {
-    	
-    	 
     	try {
 	    	if($arrayComNotas==null)
 	    		$arrayComNotas=$this->qtdeNotasDefault;	    	
@@ -100,8 +110,10 @@ class Troco
 	
 	    	}
 	    	
-	    	if($valorCedulaAtual!=0 || ($valorCentavoAtual)!=0)
+	    	if($valorCedulaAtual!=0 || ($valorCentavoAtual)!=0){
+	    		print_r($arrayComNotas);
 	    		throw new Exception(Mensagem::geraMensagem(Mensagem::ERRO_NAO_GEROU_CEDULAS,[$valorCedulaAtual, $valorCentavoAtual]));
+	    	}
 	    	
 	    	return $arrayComNotas;
 	    } catch (DivisionByZeroError $dbze) {
