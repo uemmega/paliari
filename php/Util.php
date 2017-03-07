@@ -7,7 +7,6 @@
 
 class Util{
 	
-	
 	/**
 	 * Calcula e retorna o resto de uma divisão
 	 *
