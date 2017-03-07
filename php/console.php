@@ -7,9 +7,10 @@
 require_once 'Troco.php';
 
 $reais = $argv[1] ?: 0;
+$arrayNotas = $argv[2] ?: null;
 
 $troco = new Troco();
 
-$notas = $troco->getQtdeNotas($reais);
+$notas = $troco->getQtdeNotas($reais, $arrayNotas);
 
 print_r($notas);
