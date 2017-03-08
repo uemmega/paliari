@@ -25,7 +25,7 @@ class Troco
   end
   
   # valor: Valor em reais podendo conter centavos
-  # array_com_notas: Array com as notas e quantidade
+  # array_com_notas: Array com as notas e quantidade, é importante que esteja em ordem decrescente do valor das notas
   def calcular_qtde_notas(valor, array_com_notas)
     begin
       valor_cedula_atual=valor.to_i
