@@ -29,7 +29,10 @@ O projeto troco foi implementado em **php**, **node/javascript** e **ruby**.
 
 ### Ruby
 
-
 #### resposta exemplos de testes Ruby:
 
-   
+   <p align="center">
+  <img src="/resultados/ruby/1.png" />
+  <img src="/resultados/ruby/2.png" />
+  <img src="/resultados/ruby/3.png" />
+</p>

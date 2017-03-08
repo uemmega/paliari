@@ -24,6 +24,8 @@ class Troco
     return calcular_qtde_notas(reais, array_com_notas);
   end
   
+  # valor: Valor em reais podendo conter centavos
+  # array_com_notas: Array com as notas e quantidade
   def calcular_qtde_notas(valor, array_com_notas)
     begin
       valor_cedula_atual=valor.to_i
@@ -51,7 +53,7 @@ class Troco
 	  end
       return array_com_notas;
     rescue Exception => e
-      p "Erro: "+e
+      p "Erro: #{e}"
       return nil
     end
     
